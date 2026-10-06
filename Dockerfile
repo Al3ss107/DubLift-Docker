@@ -29,6 +29,8 @@ RUN apk add --no-cache \
     ca-certificates \
     ffmpeg \
     ffmpeg-libs \
+    fontconfig \
+    ttf-dejavu \
     tzdata
 
 COPY --from=builder /out/dublift /usr/local/bin/dublift
